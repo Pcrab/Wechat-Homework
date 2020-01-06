@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/about/about",
+    "pages/tool/tool",
+    "pages/amuse/amuse",
+    "pages/setting/setting"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index-c-ed.png"
+      },
+      {
+        "pagePath": "pages/tool/tool",
+        "text": "工具",
+        "iconPath": "/images/tool.png",
+        "selectedIconPath": "/images/tool-c-ed.png"
+      },
+      {
+        "pagePath": "pages/amuse/amuse",
+        "text": "娱乐",
+        "iconPath": "/images/amuse.png",
+        "selectedIconPath": "/images/amuse-ed.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "/images/setting.png",
+        "selectedIconPath": "/images/setting-ed.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于我们",
+        "iconPath": "/images/about.png",
+        "selectedIconPath": "/images/about-ed.png"
+      }
+    ],
+    "color": "#066484",
+    "backgroundColor": "#f0f0f0",
+    "borderStyle": "black",
+    "selectedColor": "#C07F14"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

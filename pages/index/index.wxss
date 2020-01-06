@@ -1,0 +1,25 @@
+/**index.wxss**/
+.title {
+  font: bold 65rpx sans-serif;
+  text-align: center;
+  margin: 80rpx auto;
+}
+
+.subTitle {
+  font: bold 50rpx sans-serif;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.index-img {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.expression {
+  width: 75%;
+  text-align: center;
+  color: #B2B2B2;
+  font: 30rpx sans-serif;
+  margin: 50rpx auto;
+}

@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="index-img" src="{{index_image}}" mode="aspectFit"></image>
+  <text class="title">移动应用设计与开发</text>
+  <text class="subTitle">小组作业</text>
+  <text class="expression">这个小程序有许多工具可以供日常使用，也提供了休闲和娱乐的方式，同时也有着一定的自定义能力</text>
+</view>
