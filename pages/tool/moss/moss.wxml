@@ -1,0 +1,12 @@
+<!--pages/tool/moss/moss.wxml-->
+<view class="container">
+    <text class="title">摩斯电码转换</text>
+    <view class="trans">
+        <form bindsubmit="trans">
+            <textarea class="eng" type="text" name="eng" placeholder="请输入想要转换的内容" autofocus="true"></textarea>
+            <button form--type="submit">转换</button>
+            <text class="result" hidden="{{hide}}">{{result}}</text>
+        </form>
+    </view>
+    <view class="warning" style="font-weight: {{weight}}">提示：请输入英语字母或数字，不要输入其他字符，包括空格！</view>
+</view>

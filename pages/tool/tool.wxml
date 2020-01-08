@@ -1,2 +1,10 @@
 <!--pages/tool/tool.wxml-->
-<text>pages/tool/tool.wxml</text>
+<view class="title">工具栏导航</view>
+<view class="naviBox">
+    <block wx:for="{{tools}}">
+     <navigator class="{{item.name}},naviItem" url="{{item.path}}">
+         <image class="naviImg" src="{{item.img}}" mode="aspectFit" style="opacity:0.85" ></image>
+         <text class="naviTxt">{{item.name}}</text>
+     </navigator>
+    </block>
+</view>

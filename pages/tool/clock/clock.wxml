@@ -1,0 +1,15 @@
+<!--pages/tool/clock/clock.wxml-->
+<view class="container">
+    <view class="time">
+        <view class="word">
+            <text class="min">{{min}}:</text>
+            <text class="sec">{{sec}}</text>
+            <text class="msec">.{{msec}}</text>
+        </view>
+    </view>
+    <view class="key">
+        <button class="start" bindtap="start" hidden="{{startHide}}">start</button>
+        <button class="pause" bindtap="pause"hidden="{{pauseHide}}">pause</button>
+        <button class="stop" bindtap="stop" hidden="{{stopHide}}">stop</button>
+    </view>
+</view>

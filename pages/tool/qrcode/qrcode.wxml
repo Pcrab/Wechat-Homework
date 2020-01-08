@@ -1,0 +1,9 @@
+<!--pages/tool/qrcode/qrcode.wxml-->
+<view class="container">
+    <view class="tap" bindtap="getScancode">
+        <image src="{{scan}}"></image>
+        <text class="word">scan</text>
+    </view>
+    <view class="result">{{result}}</view>
+    <view class="copy" wx:if="{{isUrl}}" bindtap="copyTBL">复制</view>
+</view>

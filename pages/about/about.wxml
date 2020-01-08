@@ -1,2 +1,24 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view class="container">
+    <text class="title">关于我们</text>
+    <view class="intro">
+        <view class="intro1">
+            <text class="name">name</text>
+            <text class="no">number</text>
+            <image class="photo" src=""></image>
+            <text class="job">job</text>
+        </view>
+        <view class="intro2">
+            <text class="name">name</text>
+            <text class="no">number</text>
+            <image class="photo" src=""></image>
+            <text class="job">job</text>
+        </view>
+        <view class="intro3">
+            <text class="name">name</text>
+            <text class="no">number</text>
+            <image class="photo" src=""></image>
+            <text class="job">job</text>
+        </view>
+    </view>
+</view>

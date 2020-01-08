@@ -2,7 +2,7 @@
 .title {
   font: bold 65rpx sans-serif;
   text-align: center;
-  margin: 80rpx auto;
+  margin: 50rpx auto;
 }
 
 .subTitle {

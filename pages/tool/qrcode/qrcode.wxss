@@ -1,0 +1,32 @@
+/* pages/tool/qrcode/qrcode.wxss */
+.tap{
+    margin: 200rpx 0;
+}
+image{
+    width: 100rpx;
+    height: 100rpx;
+    vertical-align: middle;
+}
+
+.word{
+    margin-left: 50rpx;
+    font: bold 50rpx sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100rpx;
+}
+
+.result{
+    margin: auto auto 75rpx auto;
+    word-wrap: break-word;
+    width: 80%;
+    font: 31rpx sans-serif;
+}
+
+.copy{
+    font: bold 35rpx sans-serif;
+    text-align: center;
+    background-color: #F0ECB2;
+    width: 125rpx;
+    border-radius: 10rpx;
+}

@@ -1,0 +1,40 @@
+/* pages/tool/moss/moss.wxss */
+.title {
+    font: bold 55rpx sans-serif;
+    margin-bottom: 65rpx;
+}
+
+.trans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eng {
+    margin: auto;
+    height: 250rpx;
+    border: 2rpx solid black;
+    border-radius: 15rpx;
+    padding: 30rpx;
+    margin-bottom: 30rpx;
+}
+
+button {
+    height: 100rpx;
+    vertical-align: middle;
+    line-height: 80rpx;
+}
+
+.result {
+    width: 80%;
+    font: 60rpx sans-serif;
+}
+
+.warning {
+    border-top: 2rpx solid #930D0D;
+    padding: 15rpx 25rpx 0 25rpx;
+    margin-top: 65rpx;
+    width: 80%;
+    font: 35rpx sans-serif;
+    color: #930D0D;
+}

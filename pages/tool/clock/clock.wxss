@@ -1,0 +1,31 @@
+/* pages/tool/clock/clock.wxss */
+.time{
+    width: 300rpx;
+    height: 300rpx;
+    border: 2rpx solid black;
+    border-radius: 300rpx;
+    text-align: center;
+    margin: 150rpx auto;
+}
+
+.word{
+    font: bold 45rpx sans-serif;
+    color: black;
+    line-height: 300rpx;
+    vertical-align: middle;
+}
+
+.sec{
+    color: darkblue;
+}
+
+.key{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25prx auto;
+}
+
+button{
+    margin: 25rpx auto;
+}

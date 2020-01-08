@@ -1,1 +1,60 @@
 /* pages/tool/tool.wxss */
+.title{
+    margin: 80rpx 0 20rpx 75rpx;
+    font: bold 75rpx serif;
+}
+
+.naviBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 40rpx;
+}
+
+.naviItem{
+    text-align: left;
+    width: 300rpx;
+    height: 180rpx;
+    margin: 35rpx auto;
+    border-radius: 15rpx;
+}
+
+.naviImg{
+    margin: 30rpx 20rpx;
+    width: 25%;
+    height: 30%;
+}
+
+.naviTxt{
+    font: bold 35rpx sans-serif;
+    color: white;
+}
+
+.calculator{
+    background: linear-gradient(to right, #F78C75, #F2755A);
+}
+
+.clock{
+    background: linear-gradient(to right, #F7B475, #F2A45A);
+}
+
+.moss{
+    background: linear-gradient(to right, #F7EB75, #F2EF5A);
+}
+
+.qrcode{
+    background: linear-gradient(to right, #75F777, #8FF25A);
+}
+
+.setcolor{
+    background: linear-gradient(to right, #75F7ED, #4DE9E5);
+}
+
+.ascii{
+    background: linear-gradient(to right, #678CE9, #4D7AE9);
+}
+
+.map{
+    background: linear-gradient(to right, #C367E9, #C04DF0);
+}

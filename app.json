@@ -5,16 +5,17 @@
     "pages/about/about",
     "pages/tool/tool",
     "pages/amuse/amuse",
-    "pages/setting/setting"
+    "pages/setting/setting",
+    "pages/tool/calculator/calculator",
+    "pages/tool/clock/clock",
+    "pages/tool/moss/moss",
+    "pages/tool/qrcode/qrcode",
+    "pages/tool/setcolor/setcolor",
+    "pages/tool/ascii/ascii",
+    "pages/tool/map/map"
   ],
   "tabBar": {
     "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "/images/index.png",
-        "selectedIconPath": "/images/index-c-ed.png"
-      },
       {
         "pagePath": "pages/tool/tool",
         "text": "工具",
@@ -28,6 +29,12 @@
         "selectedIconPath": "/images/amuse-ed.png"
       },
       {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index-c-ed.png"
+      },
+      {
         "pagePath": "pages/setting/setting",
         "text": "设置",
         "iconPath": "/images/setting.png",
@@ -35,7 +42,7 @@
       },
       {
         "pagePath": "pages/about/about",
-        "text": "关于我们",
+        "text": "关于",
         "iconPath": "/images/about.png",
         "selectedIconPath": "/images/about-ed.png"
       }
@@ -48,7 +55,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "移动应用设计与开",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
