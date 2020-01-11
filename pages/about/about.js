@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    titleImage:"/images/titleImage.png",
+    ph01:"/images/about_p01.png",
+    ph02:"/images/about_p02.png",
+    ph03:"/images/about_p03.png",
   },
 
   /**

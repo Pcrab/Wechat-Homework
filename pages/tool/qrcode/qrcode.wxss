@@ -1,19 +1,15 @@
 /* pages/tool/qrcode/qrcode.wxss */
-.tap{
-    margin: 200rpx 0;
-}
-image{
-    width: 100rpx;
-    height: 100rpx;
-    vertical-align: middle;
+.title {
+    margin: 90rpx 0;
+    font: bold 65rpx sans-serif;
+    line-height: 75rpx;
 }
 
-.word{
-    margin-left: 50rpx;
-    font: bold 50rpx sans-serif;
-    text-align: center;
+.tap{
+    margin: 50rpx;
+    width: 200rpx;
+    height: 200rpx;
     vertical-align: middle;
-    line-height: 100rpx;
 }
 
 .result{

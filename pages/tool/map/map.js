@@ -8,11 +8,51 @@ Page({
 
   },
 
+  myLocation:function(){
+    let _this=this;
+    wx.getLocation({
+      type: "wgs84",
+      success(res) {
+        _this.setData({
+          latitude:res.latitude,
+          longitude:res.longitude,
+        })
+      }
+    })
+  },
+
+  openLocation:function(){
+    wx.getLocation({
+      type: "gcj02",
+      success(res) {
+        wx.openLocation({
+          latitude:res.latitude,
+          longitude:res.longitude,
+          scale:28,
+        })
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    let _this=this;
+    wx.getLocation({
+      type: "wgs84",
+      success(res) {
+        _this.setData({
+          latitude:res.latitude,
+          longitude:res.longitude,
+        })
+        // wx.openLocation({
+          // latitude:res.latitude,
+          // longitude:res.longitude,
+          // scale:28,
+        // })
+      }
+    })
   },
 
   /**

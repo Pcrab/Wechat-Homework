@@ -1,1 +1,20 @@
 /* pages/tool/map/map.wxss */
+.title{
+    font: bold 55rpx sans-serif;
+}
+
+map{
+    margin: 70rpx auto;
+    width: 450rpx;
+    height: 450rpx;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.butt{
+    margin: auto 35rpx;
+}

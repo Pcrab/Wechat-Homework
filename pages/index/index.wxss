@@ -1,25 +1,25 @@
 /**index.wxss**/
+.index-img {
+  margin-top: 100rpx;
+  width: 400rpx;
+  height: 400rpx;
+}
+
 .title {
-  font: bold 65rpx sans-serif;
+  font: bold 75rpx sans-serif;
   text-align: center;
-  margin: 50rpx auto;
+  margin: 75rpx auto 0 auto;
+}
+
+.twoTitle {
+  font: bold 60rpx sans-serif;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .subTitle {
-  font: bold 50rpx sans-serif;
+  margin: 20rpx;
+  font: bold 40rpx sans-serif;
+  color: #707070;
   text-align: center;
-  margin-bottom: 40rpx;
-}
-
-.index-img {
-  width: 300rpx;
-  height: 300rpx;
-}
-
-.expression {
-  width: 75%;
-  text-align: center;
-  color: #B2B2B2;
-  font: 30rpx sans-serif;
-  margin: 50rpx auto;
 }

@@ -1,2 +1,14 @@
 <!--pages/tool/ascii/ascii.wxml-->
-<text>pages/tool/ascii/ascii.wxml</text>
+<view class="title">ASCII 码表查询</view>
+<text class="warning"></text>
+<view class="search">
+    <block wx:for="{{ascii}}">
+        <view class="word" id="{{item}}" bindtap="search" style="border: 1rpx solid {{selected}}">{{item}}</view>
+    </block>
+</view>
+<view class="result" hidden="{{getResult}}">
+    <text class="char">字符: {{char}}</text>
+    <text class="ten">十进制: {{inTen}}</text>
+    <text class="two">二进制: {{inTwo}}</text>
+    <text class="sisteen">十六进制: {{inSixteen}}</text>
+</view>

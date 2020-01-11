@@ -48,15 +48,19 @@
       }
     ],
     "color": "#066484",
-    "backgroundColor": "#f0f0f0",
-    "borderStyle": "black",
-    "selectedColor": "#C07F14"
+    "selectedColor": "#C07F14",
+    "borderStyle": "white"
   },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "移动应用设计与开",
     "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取当前位置以用于定位"
+    }
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

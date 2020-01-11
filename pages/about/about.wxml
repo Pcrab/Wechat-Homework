@@ -1,24 +1,32 @@
 <!--pages/about/about.wxml-->
 <view class="container">
+    <image class="titleImage" src="{{titleImage}}"></image>
     <text class="title">关于我们</text>
+    <text class="subTitle" space="ensp">About  us</text>
     <view class="intro">
-        <view class="intro1">
-            <text class="name">name</text>
-            <text class="no">number</text>
-            <image class="photo" src=""></image>
-            <text class="job">job</text>
+        <view class="introd,a">
+            <image class="photo" src="{{ph01}}"></image>
+            <view class="text">
+                <text class="name">某某某</text>
+                <text class="no">19123000</text>
+                <text class="job">xxxxxxx,xxxxxxxxx,xxxxxx,xxxxxxx</text>
+            </view>
         </view>
-        <view class="intro2">
-            <text class="name">name</text>
-            <text class="no">number</text>
-            <image class="photo" src=""></image>
-            <text class="job">job</text>
+        <view class="introd,b">
+            <view class="text">
+                <text class="name">某某某</text>
+                <text class="no">19123000</text>
+                <text class="job">xxxxxxx,xxxxxxxxx,xxxxxx,xxxxxxx</text>
+            </view>
+            <image class="photo" src="{{ph02}}"></image>
         </view>
-        <view class="intro3">
-            <text class="name">name</text>
-            <text class="no">number</text>
-            <image class="photo" src=""></image>
-            <text class="job">job</text>
+        <view class="introd,a">
+            <image class="photo" src="{{ph03}}"></image>
+            <view class="text">
+                <text class="name">某某某</text>
+                <text class="no">19123000</text>
+                <text class="job">xxxxxxx,xxxxxxxxx,xxxxxx,xxxxxxx</text>
+            </view>
         </view>
     </view>
 </view>

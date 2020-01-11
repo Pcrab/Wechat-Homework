@@ -1,7 +1,7 @@
 /* pages/tool/tool.wxss */
 .title{
     margin: 80rpx 0 20rpx 75rpx;
-    font: bold 75rpx serif;
+    font: bold 75rpx sans-serif;
 }
 
 .naviBox{
