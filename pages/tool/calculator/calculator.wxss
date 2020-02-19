@@ -1,1 +1,118 @@
 /* pages/tool/calculator/calculator.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+  font: 100 1em sans-serif;
+}
+
+button::after{
+  border: none;
+}
+button {
+  border: none;
+  border-radius: unset;
+}
+
+.calculator-display {
+  height: 20%;
+}
+
+.calculator-display-text {
+  padding: 0 30px;
+  font-size: 6em;
+  color: #1c191c;
+  line-height: 150%;
+  text-align: right;
+}
+
+.calculator-keypad {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.calculator-key-hover {
+  box-shadow: inset 0px 0px 25vw 0px rgba(0,0,0,0.25);
+}
+
+.calculator-key {
+  line-height: 200%;
+  text-align: center;
+}
+
+.input-keys {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.function-keys {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+}
+
+.function-keys .calculator-key {
+  font-size: 2em;
+}
+
+.digit-keys {
+  width: 100%;
+  height: 85%;
+  line-height: 500%;
+  background: #e0e0e7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.digit {
+  flex: 1;
+  flex-basis: 33%;
+  height: 25%;
+}
+
+.digit-keys .calculator-key {
+  font-size: 2.25em;
+}
+
+.key-0 {
+  flex-basis: 66%;
+  text-align: left;
+  padding-left: 2em;
+}
+
+.key-dot {
+  font-size: 1em;
+}
+
+.operator-keys {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.operator {
+  color: white;
+  width: 100%;
+  font-size: 3em;
+  flex: 1;
+  flex-basis: 17%;
+}
+
+.key-equals {
+  flex-basis: 33%;
+  line-height: 400%;
+}
+
+.function {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(202,202,204,1) 0%, rgba(196,194,204,1) 100%);
+}
+
+.operator {
+  background-color: rgba(252,156,23,1);
+}

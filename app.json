@@ -62,6 +62,5 @@
       "desc": "获取当前位置以用于定位"
     }
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
