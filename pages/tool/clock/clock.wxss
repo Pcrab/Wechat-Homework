@@ -1,31 +1,52 @@
 /* pages/tool/clock/clock.wxss */
-.time{
-    width: 300rpx;
-    height: 300rpx;
-    border: 2rpx solid black;
-    border-radius: 300rpx;
-    text-align: center;
-    margin: 150rpx auto;
+page {
+    width: 100%;
+    height: 100%;
 }
 
-.word{
-    font: bold 45rpx sans-serif;
+button {
+    padding: 5px;
+    margin: 25rpx auto;
+    width: 100%;
+    font: 1.5em sans-serif;
+}
+
+.time {
+    width: 350rpx;
+    height: 350rpx;
+    border: 2rpx solid black;
+    border-radius: 350rpx;
+    text-align: center;
+    margin: 125rpx auto;
+}
+
+.word {
+    font: bold 2.4em sans-serif;
     color: black;
-    line-height: 300rpx;
+    line-height: 350rpx;
     vertical-align: middle;
 }
 
-.sec{
+.sec {
     color: darkblue;
 }
 
-.key{
+.key {
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 25prx auto;
 }
 
-button{
-    margin: 25rpx auto;
+.start {
+    background-color: #F0FBE6;
+}
+
+.pause {
+    background-color: #FAFBE6;
+}
+
+.stop {
+    background-color: #FFE9E9;
 }

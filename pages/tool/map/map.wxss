@@ -13,6 +13,7 @@ map{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #FAFEF6;
 }
 
 .butt{
