@@ -1,2 +1,24 @@
 <!--pages/tool/setcolor/setcolor.wxml-->
-<text>pages/tool/setcolor/setcolor.wxml</text>
+<view class="container">
+    <view class="title">
+        <text>颜色选择器</text>
+    </view>
+    
+    <view class="colorSelector">
+        <text>R</text>
+        <slider data-color="red" min="0" max="255" step="1" value="{{currentRed}}" activeColor="red" bindchange="setColor" bindchanging="setColor"/>
+        <input data-color="red" value="{{currentRed}}" type="number" maxlength="3" bindblur="setColor"/>
+    </view>
+    <view class="colorSelector">
+        <text>G</text>
+        <slider data-color="green" min="0" max="255" step="1" value="{{currentGreen}}" activeColor="green" bindchange="setColor" bindchanging="setColor"/>
+        <input data-color="green" value="{{currentGreen}}" type="number" maxlength="3" bindblur="setColor"/>
+    </view>
+    <view class="colorSelector">
+        <text>B</text>
+        <slider data-color="blue" min="0" max="255" step="1" value="{{currentBlue}}" activeColor="blue" bindchange="setColor" bindchanging="setColor"/>
+        <input data-color="blue" value="{{currentBlue}}" type="number" maxlength="3" bindblur="setColor"/>
+    </view>
+    
+    <view id="pad" class="pad" style="background-color: rgb({{currentRed}}, {{currentGreen}}, {{currentBlue}}); border: {{padBorder}}"></view>
+</view>

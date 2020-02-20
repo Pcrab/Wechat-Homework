@@ -11,27 +11,35 @@
 <view class="calculator-display">
   <view class="calculator-display-text">{{displayValue}}</view>
 </view>
+
 <view class="calculator-keypad">
+
   <view class="input-keys">
+
     <view class="function-keys" catchtap="onTapFunction">
       <template is="function-key" data="{{className: 'key-clear', display: clearDisplay ? 'C' : 'AC'}}"/>
       <template is="function-key" data="{{className: 'key-sign', display: '±'}}"/>
       <template is="function-key" data="{{className: 'key-percent', display: '%'}}"/>
     </view>
+
     <view class="digit-keys" catchtap="onTapDigit">
-      <template is="digit-key" data="{{className: 'key-9', display: '9'}}"/>
-      <template is="digit-key" data="{{className: 'key-8', display: '8'}}"/>
       <template is="digit-key" data="{{className: 'key-7', display: '7'}}"/>
-      <template is="digit-key" data="{{className: 'key-6', display: '6'}}"/>
-      <template is="digit-key" data="{{className: 'key-5', display: '5'}}"/>
+      <template is="digit-key" data="{{className: 'key-8', display: '8'}}"/>
+      <template is="digit-key" data="{{className: 'key-9', display: '9'}}"/>
+
       <template is="digit-key" data="{{className: 'key-4', display: '4'}}"/>
-      <template is="digit-key" data="{{className: 'key-3', display: '3'}}"/>
-      <template is="digit-key" data="{{className: 'key-2', display: '2'}}"/>
+      <template is="digit-key" data="{{className: 'key-5', display: '5'}}"/>
+      <template is="digit-key" data="{{className: 'key-6', display: '6'}}"/>
+
       <template is="digit-key" data="{{className: 'key-1', display: '1'}}"/>
+      <template is="digit-key" data="{{className: 'key-2', display: '2'}}"/>
+      <template is="digit-key" data="{{className: 'key-3', display: '3'}}"/>
+
       <template is="digit-key" data="{{className: 'key-0', display: '0'}}"/>
       <template is="digit-key" data="{{className: 'key-dot', display: '●'}}"/>
     </view>
   </view>
+
   <view class="operator-keys" catchtap="onTapOperator">
       <template is="operator-key" data="{{className: 'key-divide', display: '÷'}}"/>
       <template is="operator-key" data="{{className: 'key-multiply', display: '×'}}"/>
@@ -39,4 +47,5 @@
       <template is="operator-key" data="{{className: 'key-add', display: '+'}}"/>
       <template is="operator-key" data="{{className: 'key-equals', display: '='}}"/>
   </view>
+
 </view>

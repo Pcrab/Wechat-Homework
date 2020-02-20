@@ -5,7 +5,43 @@ Page({
    * 页面的初始数据
    */
   data: {
+    currentRed: 0,
+    currentGreen: 0,
+    currentBlue: 0,
+    padBorder: "none"
+  },
 
+  setColor: function (e) {
+
+    let color = e.target.dataset.color;
+
+    if (e.detail.value > 255) {
+      e.detail.value = 255;
+    } else if (e.detail.value < 0) {
+      e.detail.value = 0;
+    }
+
+    if ("red" == color) {
+      this.setData({
+        currentRed: e.detail.value
+      })
+    } else if ("green" == color) {
+      this.setData({
+        currentGreen: e.detail.value
+      })
+    } else if ("blue" == color) {
+      this.setData({
+        currentBlue: e.detail.value
+      })
+    }
+
+    let red = 255 - this.data.currentRed;
+    let green = 255 - this.data.currentGreen;
+    let blue = 255 - this.data.currentBlue;
+    let border = "1rpx solid rgb(" + red + ", " + green + ", " + blue + ")";
+    this.setData({
+      padBorder: border
+    })
   },
 
   /**

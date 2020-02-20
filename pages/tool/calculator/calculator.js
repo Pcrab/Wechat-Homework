@@ -30,44 +30,31 @@ Page({
   onTapFunction: function(event) {
     const key = event.target.dataset.key;
 
-    switch(key) {
-      case 'key-clear':
-        if (this.data.displayValue !== '0') {
-          this.clearDisplay();
-        } else {
-          this.clearAll();
-        }
+    if ("key-clear" == key) {
+      if (this.data.displayValue !== '0') {
+        this.clearDisplay();
+      } else {
+        this.clearAll();
+      }
+    } else if ("key-sign" == key) {
+      this.setData({
+        displayValue: String(parseFloat(this.data.displayValue) * -1)
+      })
+    } else if ("key-percent" == key) {
+      const fixedDigits = this.data.displayValue.replace(/^-?\d*\.?/, '')
+      let newValue = parseFloat(this.data.displayValue) / 100
 
-        break;
-
-      case 'key-sign':
-        var newValue = parseFloat(this.data.displayValue) * -1
-        
-        this.setData({
-          displayValue: String(newValue)
-        })
-
-        break;
-
-      case 'key-percent':
-        const fixedDigits = this.data.displayValue.replace(/^-?\d*\.?/, '')
-        var newValue = parseFloat(this.data.displayValue) / 100
-        
-        this.setData({
-          displayValue: String(newValue.toFixed(fixedDigits.length + 2))
-        });
-
-        break;
-        
-      default:
-        break;
+      this.setData({
+        displayValue: String(newValue.toFixed(fixedDigits.length + 2))
+      });
     }
+
   },
 
   onTapOperator: function(event) {
     const nextOperator = event.target.dataset.key;
     const inputValue = parseFloat(this.data.displayValue);
-    
+
     if (this.data.value == null) {
       this.setData({
         value: inputValue
@@ -81,7 +68,7 @@ Page({
         displayValue: String(newValue)
       });
     }
-    
+
     this.setData({
       waitingForOperand: true,
       operator: nextOperator
