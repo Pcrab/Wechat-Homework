@@ -14,7 +14,7 @@ Page({
   clearAll() {
     this.setData({
       value: null,
-      displayValue: '0',
+      displayValue: "0",
       operator: null,
       waitingForOperand: false
     })
@@ -23,7 +23,7 @@ Page({
   /* 仅清空当前显示的输入值 */
   clearDisplay() {
     this.setData({
-      displayValue: '0'
+      displayValue: "0"
     })
   },
 
